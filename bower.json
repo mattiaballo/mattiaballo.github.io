@@ -1,0 +1,24 @@
+{
+  "name": "org.netsons.mballo",
+  "authors": [
+    "\"Mattia Ballo <\"ballomattia.ra@gmail.com\">"
+  ],
+  "description": "personal resume and landing home page for resource and skills",
+  "main": "assets/js/main.js",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "font-awesome": "fontawesome#^4.5.0",
+    "jquery": "^2.2.2"
+  }
+}
