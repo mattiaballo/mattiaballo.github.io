@@ -1,0 +1,24 @@
+{
+  "name": "mattiaballo.github.io",
+  "version": "2.0.0",
+  "description": "personal website",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattiaballo/mattiaballo.github.io.git"
+  },
+  "author": "Mattia Ballo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mattiaballo/mattiaballo.github.io/issues"
+  },
+  "homepage": "https://github.com/mattiaballo/mattiaballo.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
