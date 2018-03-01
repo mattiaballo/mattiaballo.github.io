@@ -57,3 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# themes folders
+src/themes/
+
+# Output folders
+dist/
