@@ -7,132 +7,108 @@ http://www.tooplate.com/view/2087-kalay
 */
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400');
-
-body {
-    background: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    overflow-x: hidden;
-}
-
-html, body {
-  width: 100%;
-  height: 100%;
-}
-
-
-
-/*---------------------------------------
-  Typorgraphy              
------------------------------------------*/
-
-h1,h2,h3,h4,h5,h6 {
-  font-style: normal;
-  font-weight: bold;
-  letter-spacing: 0px;
-}
-
-h1 {
-  color: #ffffff;
-  font-size: 45px;
-  line-height: normal;
-}
-
-h2 {
-  color: #2b2b2b;
-  font-size: 35px;
-  line-height: 52px;
-  margin-top: 0px;
-}
-
-h3 {
-  color: #282828;
-  font-size: 16px;
-  line-height: 32px;
-  letter-spacing: 6px;
-  text-transform: uppercase;
-}
-
-h4 {
-  color: #353535;
-  font-size: 20px;
-}
-
-p {
-  color: #878787;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 25px;
-  letter-spacing: 0.2px;
-}
-
-.bg-grey {
-  background: #2b2b2b !important;
-}
-
-.white-color {
-  color: #f0f0f0;
-}
-
-
-
-/*---------------------------------------
-  Buttons               
------------------------------------------*/
-
-.section-btn {
-  background: #000000;
-  border: none;
-  border-radius: 50px;
-  color: #f0f0f0;
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: 1.5px;
-  padding: 18px 32px;
-  margin-top: 42px;
-  text-transform: uppercase;
-  -webkit-transition: all ease-in-out 0.4s;
-  transition: all ease-in-out 0.4s;
-}
-
-.section-btn:focus,
-.section-btn:hover {
-  background: #ffffff;
-  color: #000000;
-}
-
-
-
-/*---------------------------------------
-  General               
------------------------------------------*/
-
-html{
-  -webkit-font-smoothing: antialiased;
-}
-
-a {
-  color: #757557;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  text-decoration: none !important;
-}
-
-a:hover, a:active, a:focus {
-  color: #000000;
-  outline: none;
-}
-
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  &:before,
+  &:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 }
 
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  overflow-x: hidden;
+  /* Typorgraphy */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0px;
+  }
+  h1 {
+    color: #ffffff;
+    font-size: 45px;
+    line-height: normal;
+  }
+  h2 {
+    color: #2b2b2b;
+    font-size: 35px;
+    line-height: 52px;
+    margin-top: 0px;
+  }
+  h3 {
+    color: #282828;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+  }
+  h4 {
+    color: #353535;
+    font-size: 20px;
+  }
+  p {
+    color: #878787;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+  }
+  .bg-grey {
+    background: #2b2b2b !important;
+  }
+  .white-color {
+    color: #f0f0f0;
+  }
+  /* Buttons */
+  .section-btn {
+    background: #000000;
+    border: none;
+    border-radius: 50px;
+    color: #f0f0f0;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    padding: 18px 32px;
+    margin-top: 42px;
+    text-transform: uppercase;
+    -webkit-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
+    &:focus,
+    &:hover {
+      background: #ffffff;
+      color: #000000;
+    }
+  }
+  /* General */
+  a {
+    color: #757557;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    text-decoration: none !important;
+    &:hover,
+    &:active,
+    &:focus {
+      color: #000000;
+      outline: none;
+    }
+  }
 }
 
 .parallax-section {
@@ -145,18 +121,21 @@ a:hover, a:active, a:focus {
   padding-bottom: 32px;
 }
 
-#service, #about, #work,
-#contact, footer {
+#service,
+#about,
+#work,
+#contact,
+footer {
   position: relative;
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
-#service, #work {
+#service,
+#work {
   background: #f9f9f9;
   text-align: center;
 }
-
 
 /*---------------------------------------
   Pre loader section              
@@ -199,33 +178,31 @@ a:hover, a:active, a:focus {
 }
 
 @keyframes spinner {
-  to {transform: rotate(360deg);}
+  to {
+    transform: rotate(360deg);
+  }
 }
-
-
 
 /*---------------------------------------
   Home section              
 -----------------------------------------*/
 
 #home {
-  background: url('../images/home-bg.jpg') 50% 0 repeat-y fixed;
-  background-size: cover;
-  background-position: center center;
+  //background: url('../images/home-bg.jpg') 50% 0 repeat-y fixed;
+  // background-size: cover;
+  // background-position: center center;
   display: -webkit-box;
   display: -webkit-flex;
-   display: -ms-flexbox;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-   align-items: center;
+  align-items: center;
   height: 100vh;
   position: relative;
   text-align: right;
 }
-
-
 
 /*---------------------------------------
   Service section              
@@ -268,8 +245,6 @@ a:hover, a:active, a:focus {
   color: #ffffff;
 }
 
-
-
 /*---------------------------------------
   About section              
 -----------------------------------------*/
@@ -294,8 +269,6 @@ a:hover, a:active, a:focus {
 .about-thumb p {
   padding: 2px 0;
 }
-
-
 
 /*---------------------------------------
   Work section              
@@ -333,8 +306,6 @@ a:hover, a:active, a:focus {
 .work-thumb:hover .work-thumb-overlay {
   opacity: 1;
 }
-
-
 
 /*---------------------------------------
   Contact section              
@@ -378,8 +349,6 @@ a:hover, a:active, a:focus {
   color: #ffffff;
 }
 
-
-
 /*---------------------------------------
   Footer section              
 -----------------------------------------*/
@@ -393,8 +362,6 @@ footer {
 footer p {
   padding-bottom: 16px;
 }
-
-
 
 /*---------------------------------------
   Social icon             
@@ -437,8 +404,6 @@ footer p {
   top: -5px;
 }
 
-
-
 /*---------------------------------------
   Mobile Responsive styles              
 -----------------------------------------*/
@@ -447,17 +412,14 @@ footer p {
   #home {
     height: 55vh;
   }
-
   .service-thumb {
     margin-top: 12px;
     margin-bottom: 22px;
   }
-
   .contact-info {
     margin-top: 22px;
   }
 }
-
 
 @media (max-width: 768px) {
   #home {
@@ -465,26 +427,20 @@ footer p {
   }
 }
 
-
 @media (max-width: 580px) {
-
   h1 {
     font-size: 29px;
   }
-
   h2 {
     font-size: 23px;
   }
-
   #home {
     height: 95vh;
   }
-
   .contact-info {
     margin-top: 42px;
   }
 }
-
 
 @media (max-width: 320px) {
   #home {
