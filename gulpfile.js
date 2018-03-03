@@ -24,7 +24,7 @@ var css_dest = 'dist/css';
 
 var js_src = [
   'node_modules/bootstrap/dist/js/bootstrap.min.js',
-  'node_modules/popper.js/dist/popper.min.js',
+  'node_modules/popper.js/dist/umd/popper.min.js',
   'node_modules/jquery/dist/jquery.min.js',
   'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
   'node_modules/jquery-parallax.js/parallax.min.js',
