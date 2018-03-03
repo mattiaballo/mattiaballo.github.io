@@ -111,7 +111,16 @@ gulp.task('serve', function () {
   });
 
   gulp.watch(['src/scss/*.scss'], ['sass']);
-  gulp.watch(['dist/*.html', 'dist/js/*.js', 'dist/css/*.css']).on('change', browserSync.reload);
+  gulp.watch(js_src, ['js']);
+  gulp.watch(html_src, ['html']);
+  gulp.watch(img_src, ['images']);
+
+  gulp.watch([
+    html_dest + '/*.html',
+    js_dest + '/*.js',
+    css_dest + '/*.css',
+    img_dest + '/*.*'
+  ]).on('change', browserSync.reload);
 })
 
 // build task
