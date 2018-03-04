@@ -1,0 +1,11 @@
+/* Footer */
+
+footer {
+    @extend %section-padding;
+    background: #7682cc;
+    text-align: center;
+    padding: 120px 0;
+    p {
+        padding-bottom: 16px;
+    }
+}

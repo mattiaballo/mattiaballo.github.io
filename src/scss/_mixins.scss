@@ -1,0 +1,32 @@
+/* Box sizing */
+
+@mixin box-sizing($type) {
+    -webkit-box-sizing: $type;
+    -moz-box-sizing: $type;
+    box-sizing: $type;
+}
+
+/* Transition */
+
+@mixin transition($time) {
+    -webkit-transition: $time;
+    -moz-transition: $time;
+    transition: $time;
+}
+
+/* Align Items */
+
+@mixin align-items($pos) {
+    -webkit-align-items: $pos;
+    -moz-align-items: $pos;
+    align-items: $pos;
+}
+
+/* Border Radius */
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}

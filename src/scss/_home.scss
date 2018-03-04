@@ -1,0 +1,42 @@
+.home {
+    @include align-items(center);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    height: 100vh;
+    position: relative;
+    text-align: right;
+    @media (max-width: 980px) {
+        height: 55vh;
+    }
+    @media (max-width: 768px) {
+        height: 85vh;
+    }
+    @media (max-width: 580px) {
+        height: 95vh;
+    }
+    @media (max-width: 320px) {
+        height: 125vh;
+    }
+    .section-btn {
+        @include border-radius(50px);
+        @include transition(all ease-in-out 0.4s);
+        background: $black;
+        border: none;
+        color: #f0f0f0;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+        padding: 18px 32px;
+        margin-top: 42px;
+        text-transform: uppercase;
+        &:focus,
+        &:hover {
+            background: $white;
+            color: $black;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+/* Work */
+
+.work {
+    @extend %section-generic;
+    .work-thumb {
+        margin: 22px 0 12px 0;
+        padding: 0;
+        overflow: hidden;
+        position: relative;
+        text-align: left;
+        img {
+            @include border-radius(5px);
+        }
+        h2 {
+            font-size: 25px;
+        }
+        .work-thumb-overlay {
+            @extend %full-size;
+            @include border-radius(5px);
+            @include transition(all ease-in-out 0.4s);
+            position: absolute;
+            background: #7682cc;
+            cursor: crosshair;
+            opacity: 0;
+            padding: 82px 42px;
+        }
+        &:hover {
+            .work-thumb-overlay {
+                opacity: 1;
+            }
+        }
+    }
+}

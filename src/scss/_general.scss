@@ -1,0 +1,135 @@
+/* General Theme Style */
+
+* {
+    @include box-sizing(border-box);
+    &:before,
+    &:after {
+        @include box-sizing(border-box);
+    }
+}
+
+html {
+    @extend %full-size;
+}
+
+body {
+    @extend %full-size;
+    background: $background-color;
+    font-family: $font-family-base;
+    font-style: normal;
+    font-weight: normal;
+    overflow-x: hidden;
+}
+
+h1 {
+    @extend %normal-bold;
+    color: $color-heading;
+    font-size: 45px;
+    line-height: normal;
+    @media (max-width: 580px) {
+        font-size: 29px;
+    }
+}
+
+h2 {
+    @extend %normal-bold;
+    color: #2b2b2b;
+    font-size: 35px;
+    line-height: 52px;
+    margin-top: 0px;
+    @media (max-width: 580px) {
+        font-size: 23px;
+    }
+}
+
+h3 {
+    @extend %normal-bold;
+    color: #282828;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+h4 {
+    @extend %normal-bold;
+    color: #353535;
+    font-size: 20px;
+}
+
+h5,
+h6 {
+    @extend %normal-bold;
+}
+
+p {
+    color: #878787;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+}
+
+a {
+    @include transition(0.5s);
+    color: #757557;
+    text-decoration: none !important;
+    &:hover,
+    &:active,
+    &:focus {
+        color: $color-link-hover;
+        outline: none;
+    }
+}
+
+section {
+    @extend %section-padding;
+    &.parallax-section {
+        background-attachment: fixed !important;
+        background-size: cover !important;
+    }
+    .title {
+        margin: 0;
+        padding-bottom: 32px;
+    }
+}
+
+/* Social icon */
+
+.social-icon {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    li {
+        display: inline-block;
+        list-style: none;
+        a {
+            @include border-radius(100%);
+            @include transition(all 0.4s ease-in-out);
+            background: #ffffff;
+            color: #454545;
+            cursor: pointer;
+            font-size: 20px;
+            text-decoration: none;
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            vertical-align: middle;
+            position: relative;
+            top: 0;
+            margin: 0px 6px 10px 6px;
+            &:hover {
+                background: #000000;
+                color: #ffffff;
+                transform: scale(1.1);
+                top: -5px;
+            }
+        }
+    }
+}
+
+.white-color {
+    color: #f0f0f0;
+}

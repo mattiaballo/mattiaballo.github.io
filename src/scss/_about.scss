@@ -1,0 +1,27 @@
+/* About */
+
+.about {
+    padding-top: 100px;
+    .about-image-thumb {
+        img {
+            @include border-radius(5px);
+            margin-bottom: 22px;
+        }
+        .social-icon {
+            li {
+                a {
+                    background: #f0f0f0;
+                    &:hover {
+                        background: #000000;
+                    }
+                }
+            }
+        }
+    }
+    .about-thumb {
+        padding: 32px 12px;
+        p {
+            padding: 2px 0;
+        }
+    }
+}

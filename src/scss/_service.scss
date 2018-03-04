@@ -1,0 +1,43 @@
+/* Service */
+
+.service {
+    @extend %section-generic;
+    .service-thumb {
+        @include border-radius(5px);
+        @include transition(all ease-in-out 0.4s);
+        height: 100%;
+        background: #ffffff;
+        padding: 42px 22px;
+        cursor: crosshair;
+        position: relative;
+        top: 0;
+        &:hover {
+            background: #2b2b2b;
+            top: -5px;
+            .fa,
+            h4 {
+                color: #ffffff;
+            }
+        }
+        &.bg-grey {
+            background: #2b2b2b !important;
+            .fa {
+                color: #ffffff;
+            }
+        }
+        h4 {
+            padding-bottom: 5px;
+        }
+        .fa {
+            color: #7682cc;
+            font-size: 62px;
+            text-align: center;
+            margin-top: 32px;
+            margin-bottom: 22px;
+        }
+        @media (max-width: 980px) {
+            margin-top: 12px;
+            margin-bottom: 22px;
+        }
+    }
+}
