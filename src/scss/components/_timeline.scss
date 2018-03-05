@@ -1,0 +1,93 @@
+.timeline {
+    padding: 0 0 0 60px;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        transition: all 0.5s linear;
+        top: 0;
+        &:before {
+            content: "";
+            display: block;
+            width: 0;
+            height: 100%;
+            border: 1px dashed $color-timeline-border;
+            position: absolute;
+            top: 0;
+            left: 30px;
+        }
+        li {
+            @include linear-gradient($primary-accent, $primary-light);
+            @include border-radius(10px);
+            margin: 35px 60px;
+            position: relative;
+            padding: 10px 20px;
+            color: $color-timeline-text;
+            line-height: 20px;
+            >span {
+                content: "";
+                display: block;
+                width: 0;
+                height: 100%;
+                border: 1px solid $color-timeline-border;
+                position: absolute;
+                top: 0;
+                left: -30px;
+                &:before {
+                    @extend %timeline-dots;
+                    @include border-radius(50%);
+                    @include box-sizing(unset);
+                    top: -10px;
+                }
+                &:after {
+                    @extend %timeline-dots;
+                    @include border-radius(50%);
+                    @include box-sizing(unset);
+                    top: 95%;
+                }
+            }
+            .cv-title {
+                text-transform: uppercase;
+                font-weight: 700;
+                margin-bottom: 5px;
+            }
+            .cv-info {
+                &:first-letter {
+                    text-transform: capitalize;
+                    line-height: 1.7;
+                }
+            }
+            .cv-name {
+                margin-top: 10px;
+                text-transform: capitalize;
+                font-style: italic;
+                text-align: right;
+                margin-right: 20px;
+            }
+            .cv-time {
+                span {
+                    position: absolute;
+                    left: -100px;
+                    color: $color-timeline-time;
+                    font-size: 80%;
+                    font-weight: bold;
+                    &:first-child {
+                        top: -16px;
+                    }
+                    &:last-child {
+                        top: 94%;
+                    }
+                }
+            }
+            a {
+                color: $white;
+                font-size: 125%;
+                text-decoration: underline !important;
+                &:hover {
+                    color: darken($white, 20%);
+                }
+            }
+        }
+    }
+}

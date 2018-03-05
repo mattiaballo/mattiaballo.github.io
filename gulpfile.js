@@ -111,7 +111,7 @@ gulp.task('serve', ['build'], function () {
     server: './dist'
   });
 
-  gulp.watch(['src/scss/*.scss'], ['sass']);
+  gulp.watch(['src/scss/**/*.scss'], ['sass']);
   gulp.watch(js_src, ['js']);
   gulp.watch(html_src, ['html']);
   gulp.watch(img_src, ['images']);

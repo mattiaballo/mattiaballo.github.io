@@ -14,6 +14,15 @@
     transition: $time;
 }
 
+/* Animations */
+
+@mixin animations($animation) {
+    -webkit-animation: $animation;
+    -moz-animation: $animation;
+    -o-animation: $animation;
+    animation: $animation;
+}
+
 /* Align Items */
 
 @mixin align-items($pos) {
@@ -29,4 +38,14 @@
     -moz-border-radius: $radius;
     -ms-border-radius: $radius;
     border-radius: $radius;
+}
+
+/* Linear gradient */
+
+@mixin linear-gradient($c1, $c2) {
+    background: $c1;
+    background: -moz-linear-gradient(top, $c1 0%, $c2 100%);
+    background: -webkit-linear-gradient(top, $c1 0%, $c2 100%);
+    background: linear-gradient(to bottom, $c1 0%, $c2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$c1', endColorstr='$c2', GradientType=0);
 }

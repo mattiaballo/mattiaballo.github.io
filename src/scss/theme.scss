@@ -6,10 +6,13 @@
 @import 'general';
 /* Sections */
 
-@import 'preloader';
-@import 'home';
-@import 'service';
-@import 'about';
-@import 'work';
-@import 'contact';
-@import 'footer';
+@import 'pages/home';
+@import 'pages/service';
+@import 'pages/about';
+@import 'pages/project';
+@import 'pages/contact';
+/* Components */
+
+@import 'components/preloader';
+@import 'components/timeline';
+@import 'components/footer';

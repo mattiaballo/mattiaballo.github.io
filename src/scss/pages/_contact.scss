@@ -1,0 +1,15 @@
+/* Contact */
+
+.contact {
+    .contact-info {
+        .fa {
+            padding-right: 5px;
+        }
+        @media (max-width: 980px) {
+            margin-top: 22px;
+        }
+        @media (max-width: 580px) {
+            margin-top: 42px;
+        }
+    }
+}

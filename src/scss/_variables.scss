@@ -7,8 +7,9 @@ sans-serif;
 $white: #ffffff;
 $black: #000000;
 $bg: #f9f9f9;
-$primary: #5C6BC0;
-$primary-accent: darken($primary, 10%);
+$primary: #5C6BC0; // Indigo 400
+$primary-accent: #3F51B5; // Indigo 500 
+$primary-light: #7986CB; // Indigo 300
 /* Padding*/
 
 $section-padding: 80px;
@@ -17,25 +18,22 @@ $section-padding: 80px;
 $background-color: $white;
 $color-link-hover: $black;
 $color-heading: $white;
+$color-text: $white;
 $color-button-text: $white;
 $color-button-background: lighten($black, 17%); //#2b2b2b
-
 $padding-section-title-bottom: 6px;
 /* Service */
 
 $color-service-background-thumb: $white;
 $color-service-background-hover: lighten($black, 17%); //#2b2b2b
-/* Work */
+/* Project */
 
-$color-work-background-hover: $primary;
-/* Contacts */
+$color-project-background-hover: $primary;
+/* Timeline */
 
-$color-contact-form-border: #f0f0f0;
-$color-contact-form-border-hover: #999999;
-$color-contact-btn-background: $color-button-background;
-$color-contact-btn-text: $color-button-text;
-$color-contact-btn-background-hover: $primary-accent;
-$color-contact-btn-text-hover: $color-button-text;
+$color-timeline-text: darken($white, 5%);
+$color-timeline-time: lighten($black, 5%);
+$color-timeline-border: lighten($black, 10%);
 /* Footer */
 
 $footer-background-color: $primary;
@@ -62,4 +60,15 @@ $footer-background-color: $primary;
 %section-generic {
     background: $bg;
     text-align: center;
+}
+
+%timeline-dots {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: $primary-light;
+    border: 2px solid $primary;
+    position: absolute;
+    left: -7.5px;
 }

@@ -1,8 +1,8 @@
-/* Work */
+/* project */
 
-.work {
+.project {
     @extend %section-generic;
-    .work-thumb {
+    .project-thumb {
         margin: 22px 0 12px 0;
         padding: 0;
         overflow: hidden;
@@ -14,18 +14,18 @@
         h2 {
             font-size: 25px;
         }
-        .work-thumb-overlay {
+        .project-thumb-overlay {
             @extend %full-size;
             @include border-radius(5px);
             @include transition(all ease-in-out 0.4s);
             position: absolute;
-            background: $color-work-background-hover;
+            background: $color-project-background-hover;
             cursor: crosshair;
             opacity: 0;
             padding: 82px 42px;
         }
         &:hover {
-            .work-thumb-overlay {
+            .project-thumb-overlay {
                 opacity: 1;
             }
         }
