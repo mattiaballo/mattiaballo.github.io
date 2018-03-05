@@ -6,30 +6,30 @@
         @include border-radius(5px);
         @include transition(all ease-in-out 0.4s);
         height: 100%;
-        background: #ffffff;
+        background: $color-service-background-thumb;
         padding: 42px 22px;
         cursor: crosshair;
         position: relative;
         top: 0;
         &:hover {
-            background: #2b2b2b;
+            background: $color-service-background-hover;
             top: -5px;
             .fa,
             h4 {
-                color: #ffffff;
+                color: $color-heading;
             }
         }
         &.bg-grey {
-            background: #2b2b2b !important;
+            background: $color-service-background-hover !important;
             .fa {
-                color: #ffffff;
+                color: $white;
             }
         }
         h4 {
             padding-bottom: 5px;
         }
         .fa {
-            color: #7682cc;
+            color: $primary-accent;
             font-size: 62px;
             text-align: center;
             margin-top: 32px;

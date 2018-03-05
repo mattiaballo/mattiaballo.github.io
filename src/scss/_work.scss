@@ -19,7 +19,7 @@
             @include border-radius(5px);
             @include transition(all ease-in-out 0.4s);
             position: absolute;
-            background: #7682cc;
+            background: $color-work-background-hover;
             cursor: crosshair;
             opacity: 0;
             padding: 82px 42px;

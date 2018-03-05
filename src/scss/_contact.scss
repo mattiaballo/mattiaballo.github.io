@@ -16,29 +16,30 @@
         @include border-radius(0px);
         @include transition(all ease-in-out 0.4s);
         border: none;
-        border-bottom: 2px solid #f0f0f0;
+        border-bottom: 2px solid $color-contact-form-border;
         box-shadow: none;
         font-size: 18px;
         margin-top: 10px;
         margin-bottom: 10px;
         &:focus {
-            border-bottom-color: #999999;
+            border-bottom-color: $color-contact-form-border-hover;
         }
     }
     input {
         height: 55px;
     }
     button {
-        &#submit {
+        &[type="submit"] {
             @include border-radius(50px);
-            background: #2b2b2b;
+            background: $color-contact-btn-background;
             border: none;
-            color: #ffffff;
+            color: $color-contact-btn-text;
             height: 50px;
             margin-top: 24px;
             &:hover {
-                background: #7682cc;
-                color: #ffffff;
+                background: $color-contact-btn-background-hover;
+                color: $color-contact-btn-text-hover;
+                cursor: pointer;
             }
         }
     }

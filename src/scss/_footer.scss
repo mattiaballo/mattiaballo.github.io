@@ -2,7 +2,7 @@
 
 footer {
     @extend %section-padding;
-    background: #7682cc;
+    background: $footer-background-color;
     text-align: center;
     padding: 120px 0;
     p {

@@ -24,9 +24,9 @@
     .section-btn {
         @include border-radius(50px);
         @include transition(all ease-in-out 0.4s);
-        background: $black;
+        background: $color-button-background;
         border: none;
-        color: #f0f0f0;
+        color: darken($color-button-text, 5%);
         font-size: 12px;
         font-weight: bold;
         letter-spacing: 1.5px;
@@ -35,8 +35,8 @@
         text-transform: uppercase;
         &:focus,
         &:hover {
-            background: $white;
-            color: $black;
+            background: darken($white, 5%);
+            color: lighten($black, 5%);
         }
     }
 }

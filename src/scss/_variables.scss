@@ -6,6 +6,9 @@ sans-serif;
 
 $white: #ffffff;
 $black: #000000;
+$bg: #f9f9f9;
+$primary: #5C6BC0;
+$primary-accent: darken($primary, 10%);
 /* Padding*/
 
 $section-padding: 80px;
@@ -14,6 +17,28 @@ $section-padding: 80px;
 $background-color: $white;
 $color-link-hover: $black;
 $color-heading: $white;
+$color-button-text: $white;
+$color-button-background: lighten($black, 17%); //#2b2b2b
+
+$padding-section-title-bottom: 6px;
+/* Service */
+
+$color-service-background-thumb: $white;
+$color-service-background-hover: lighten($black, 17%); //#2b2b2b
+/* Work */
+
+$color-work-background-hover: $primary;
+/* Contacts */
+
+$color-contact-form-border: #f0f0f0;
+$color-contact-form-border-hover: #999999;
+$color-contact-btn-background: $color-button-background;
+$color-contact-btn-text: $color-button-text;
+$color-contact-btn-background-hover: $primary-accent;
+$color-contact-btn-text-hover: $color-button-text;
+/* Footer */
+
+$footer-background-color: $primary;
 /* properties group */
 
 %full-size {
@@ -35,6 +60,6 @@ $color-heading: $white;
 }
 
 %section-generic {
-    background: #f9f9f9;
+    background: $bg;
     text-align: center;
 }
