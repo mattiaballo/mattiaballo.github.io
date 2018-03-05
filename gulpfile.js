@@ -105,7 +105,7 @@ gulp.task('html', function () {
 });
 
 // Static server + watching scss/html/js files
-gulp.task('serve', function () {
+gulp.task('serve', ['build'], function () {
 
   browserSync.init({
     server: './dist'
@@ -124,8 +124,15 @@ gulp.task('serve', function () {
   ]).on('change', browserSync.reload);
 })
 
+// publish website
+gulp.task('publish', ['build'], function () {
+  return gulp.src(['dist/**/*'], {
+    base: 'dist'
+  }).pipe(gulp.dest('.'));
+});
+
 // build task
 gulp.task('build', ['js', 'CSS', 'fonts', 'images', 'sass', 'html']);
 
 //default task
-gulp.task('default', ['build', 'serve']);
+gulp.task('default', ['serve']);
