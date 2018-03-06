@@ -19,25 +19,17 @@
                 color: $color-heading;
             }
         }
-        &.bg-grey {
-            background: $color-service-background-hover !important;
-            .fa {
-                color: $white;
-            }
-        }
         h4 {
             padding-bottom: 5px;
         }
         .fa {
-            color: $primary-accent;
-            font-size: 62px;
+            color: $color-service-icons;
+            font-size: 92px;
             text-align: center;
             margin-top: 32px;
-            margin-bottom: 22px;
         }
         @media (max-width: 980px) {
             margin-top: 12px;
-            margin-bottom: 22px;
         }
     }
 }

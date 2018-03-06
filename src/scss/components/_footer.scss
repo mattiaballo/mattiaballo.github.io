@@ -4,8 +4,16 @@ footer {
     @extend %section-padding;
     background: $footer-background-color;
     text-align: center;
-    padding: 120px 0;
+    padding: 60px 0;
     p {
         padding-bottom: 16px;
+    }
+    .blockquote {
+        p {
+            color: $color-text;
+        }
+        .blockquote-footer {
+            color: darken($color-text, 10%);
+        }
     }
 }

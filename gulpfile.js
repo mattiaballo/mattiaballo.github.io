@@ -5,7 +5,8 @@ var sass = require('gulp-sass');
 // PROJECT SPECIFIC SETTINGS
 // #FONTS
 var fonts_src = [
-  'node_modules/font-awesome/fonts/*.*'
+  'node_modules/font-awesome/fonts/*',
+  'src/fonts/*'
 ];
 
 var fonts_dest = 'dist/fonts';
@@ -58,6 +59,14 @@ var html_src = [
 
 var html_dest = 'dist';
 
+// #ASSETS
+
+var assets_src = [
+  'src/assets/*'
+];
+
+var assets_dest = 'dist/assets';
+
 
 // SCRIPTS GULP
 
@@ -97,6 +106,13 @@ gulp.task('images', function () {
     .pipe(browserSync.stream());
 });
 
+// Move Generic files to dist folder
+gulp.task('assets', function () {
+  return gulp.src(assets_src)
+    .pipe(gulp.dest(assets_dest))
+    .pipe(browserSync.stream());
+});
+
 // Move HTML files to dist folder
 gulp.task('html', function () {
   return gulp.src(html_src)
@@ -132,7 +148,7 @@ gulp.task('publish', ['build'], function () {
 });
 
 // build task
-gulp.task('build', ['js', 'CSS', 'fonts', 'images', 'sass', 'html']);
+gulp.task('build', ['js', 'CSS', 'fonts', 'images', 'sass', 'assets', 'html']);
 
 //default task
 gulp.task('default', ['serve']);
