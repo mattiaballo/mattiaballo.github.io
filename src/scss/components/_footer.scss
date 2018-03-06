@@ -2,7 +2,7 @@
 
 footer {
     @extend %section-padding;
-    background: $footer-background-color;
+    @include linear-gradient($primary, $primary-light);
     text-align: center;
     padding: 60px 0;
     p {

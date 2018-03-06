@@ -18,7 +18,7 @@
             left: 30px;
         }
         li {
-            @include linear-gradient($primary-accent, $primary-light);
+            @include linear-gradient($primary-accent, $primary);
             @include border-radius(10px);
             margin: 35px 60px;
             position: relative;
