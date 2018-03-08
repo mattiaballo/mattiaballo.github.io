@@ -8,18 +8,27 @@
         overflow: hidden;
         position: relative;
         text-align: left;
+        height: 100%;
         img {
             @include border-radius(5px);
         }
-        h2 {
-            font-size: 25px;
+        a {
+            color: $color-text;
+            text-decoration: underline !important;
+        }
+        h4 {
+            color: darken($white, 5%);
+            &.thumb-title {
+                font-size: 180%;
+                color: $white;
+            }
         }
         .project-thumb-overlay {
             @extend %full-size;
+            @include linear-gradient($color-project-bg-top, $color-project-bg-bottom);
             @include border-radius(5px);
             @include transition(all ease-in-out 0.4s);
             position: absolute;
-            background: $color-project-background-hover;
             cursor: crosshair;
             opacity: 0;
             padding: 82px 42px;
@@ -27,6 +36,27 @@
         &:hover {
             .project-thumb-overlay {
                 opacity: 1;
+            }
+        }
+        &.bg-orange {
+            @include linear-gradient(palette(Orange, 600), palette(Orange));
+            @include border-radius(5px);
+            .project-thumb-overlay {
+                @include linear-gradient(palette(Orange, 700), palette(Orange, 600));
+            }
+        }
+        &.bg-black {
+            @include linear-gradient(palette(Grey, 900), palette(Grey, 900));
+            @include border-radius(5px);
+            .project-thumb-overlay {
+                @include linear-gradient(palette(Black), palette(Grey, 900));
+            }
+        }
+        &.bg-light-blue {
+            @include linear-gradient(palette(Blue, 100), palette(Light Blue, 100));
+            @include border-radius(5px);
+            .project-thumb-overlay {
+                @include linear-gradient(palette(Blue, 300), palette(Light Blue, 200));
             }
         }
     }

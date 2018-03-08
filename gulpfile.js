@@ -15,8 +15,7 @@ var fonts_dest = 'dist/fonts';
 var css_src = [
   'node_modules/bootstrap/dist/css/bootstrap.min.css',
   'node_modules/animate.css/animate.min.css',
-  'node_modules/font-awesome/css/font-awesome.min.css',
-  'node_modules/magnific-popup/dist/magnific-popup.css'
+  'node_modules/font-awesome/css/font-awesome.min.css'
 ];
 
 var css_dest = 'dist/css';
@@ -27,7 +26,6 @@ var js_src = [
   'node_modules/bootstrap/dist/js/bootstrap.min.js',
   'node_modules/popper.js/dist/umd/popper.min.js',
   'node_modules/jquery/dist/jquery.min.js',
-  'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
   'node_modules/jquery-parallax.js/parallax.min.js',
   'node_modules/smooth-scroll/dist/js/smooth-scroll.min.js',
   'node_modules/wowjs/dist/wow.min.js',

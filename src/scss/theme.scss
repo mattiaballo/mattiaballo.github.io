@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400');
-@import 'variables';
+@import '../../node_modules/google-material-color/dist/palette.scss';
 @import 'mixins';
+@import 'variables';
 /* Theme */
 
 @import 'general';

@@ -6,15 +6,15 @@ sans-serif;
 
 $white: #ffffff;
 $black: #000000;
-$bg: #f9f9f9;
-$primary: #5C6BC0; // Indigo 400
-$primary-accent: #3F51B5; // Indigo 500 
-$primary-light: #7986CB; // Indigo 300
+
+$primary: palette(Indigo, 400); // Indigo 400
+$primary-accent: palette(Indigo); // Indigo 500 
+$primary-light: palette(Indigo, 300); // Indigo 300
 /* Padding*/
 
 $section-padding: 80px;
 /* Theme sections */
-
+$bg: darken($white, 3%);
 $background-color: $white;
 $color-link-hover: $black;
 $color-heading: $white;
@@ -29,7 +29,8 @@ $color-service-background-hover: lighten($black, 17%); //#2b2b2b
 $color-service-icons: $primary-accent;
 /* Project */
 
-$color-project-background-hover: $primary;
+$color-project-bg-top: palette(Indigo, 700);
+$color-project-bg-bottom: palette(Indigo, 700);
 /* Timeline */
 
 $color-timeline-text: darken($white, 5%);
