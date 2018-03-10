@@ -1,5 +1,8 @@
 .timeline {
     padding: 0 0 0 60px;
+    @media (max-width: 576px){
+        padding-left: 40px;
+    }
     ul {
         list-style-type: none;
         margin: 0;
@@ -25,6 +28,9 @@
             padding: 10px 20px;
             color: $color-timeline-text;
             line-height: 20px;
+            @media (max-width: 576px){
+                margin-right:0;
+            }
             >span {
                 content: "";
                 display: block;

@@ -237,6 +237,9 @@ section .title {
     .service .service-thumb {
       margin-top: 12px; } }
 
+.service .t {
+  margin-top: 5px; }
+
 /* About */
 .about {
   padding-top: 100px; }
@@ -344,6 +347,10 @@ section .title {
       background: linear-gradient(to bottom, #64B5F6 0%, #81D4FA 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$c1', endColorstr='$c2', GradientType=0); }
 
+.project .t {
+  margin-top: 10px;
+  min-height: 348px; }
+
 /* Contact */
 .contact .contact-info .fa {
   padding-right: 5px; }
@@ -424,6 +431,9 @@ section .title {
 
 .timeline {
   padding: 0 0 0 60px; }
+  @media (max-width: 576px) {
+    .timeline {
+      padding-left: 40px; } }
   .timeline ul {
     list-style-type: none;
     margin: 0;
@@ -455,6 +465,9 @@ section .title {
       padding: 10px 20px;
       color: #f2f2f2;
       line-height: 20px; }
+      @media (max-width: 576px) {
+        .timeline ul li {
+          margin-right: 0; } }
       .timeline ul li > span {
         content: "";
         display: block;
