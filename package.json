@@ -20,7 +20,6 @@
   "homepage": "https://github.com/mattiaballo/mattiaballo.github.io#readme",
   "devDependencies": {
     "browser-sync": "^2.23.6",
-    "google-material-color": "^1.3.1",
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0"
@@ -29,6 +28,7 @@
     "animate.css": "^3.6.1",
     "bootstrap": "^4.0.0",
     "font-awesome": "^4.7.0",
+    "google-material-color": "^1.3.1",
     "jquery": "^3.3.1",
     "jquery-parallax.js": "^1.5.0",
     "popper.js": "^1.12.9",
